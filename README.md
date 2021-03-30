@@ -1,7 +1,7 @@
 # Orthogonalizing Convolutional Layers with the Cayley Transform
 <img align="right" width="400" src="img/ICLR-Thumbnail-Fourier.001.png">
 <p>This repository contains implementations and source code to reproduce experiments
-for the ICLR 2021 spotlight paper <a href=".">Orthogonalizing Convolutional Layers with the Cayley Transform</a>
+for the ICLR 2021 spotlight paper <a href="https://openreview.net/forum?id=Pbj8H_jEHYv">Orthogonalizing Convolutional Layers with the Cayley Transform</a>
 by Asher Trockman and Zico Kolter.</p>
 
 <p>
