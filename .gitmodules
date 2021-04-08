@@ -1,0 +1,3 @@
+[submodule "LConvNet"]
+	path = LConvNet
+	url = https://github.com/colinQiyangLi/LConvNet
