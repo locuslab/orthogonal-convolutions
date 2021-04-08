@@ -16,7 +16,7 @@ FFT-based convolutions and how to orthogonalize them
 
 You can clone this repo using:
 ```
-git clone https://github.com/ashertrockman/private-orthogonal-convolutions --recursive
+git clone https://github.com/locuslab/orthogonal-convolutions --recursive
 ```
 where the `--recursive` is necessary for the submodules.
 
