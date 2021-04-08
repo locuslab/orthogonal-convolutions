@@ -28,3 +28,21 @@ conda activate orthoconv
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
 conda install --file requirements.txt
 ```
+
+### The Orthogonal Convolutional Layer
+
+Our orthogonal convolutional layer can be found in `layers.py`. The actual layer is the module `CayleyConv`. It depends on the function `cayley`, our implementation of the Cayley transform for (semi-)orthogonalization. Additionally, `CayleyConv` is a subclass of `StridedConv`, which emulates striding functionality by reshaping the input tensor.
+
+### Running Experiments
+
+The script `train.py` can be used to run most of the experiments from our paper. To try the "flagship" experiment demonstrating better clean accuracy and <img src="https://render.githubusercontent.com/render/math?math=\ell_2">-norm-bounded deterministic certifiable robustness, run:
+
+```
+python train.py --epochs=200 --conv=CayleyConv --linear=CayleyLinear --lr_max=0.001
+```
+
+To compare with BCOP as in our paper, run:
+
+```
+python train.py --epochs=200 --conv=BCOP --linear=BjorckLinear --lr_max=0.001
+```
