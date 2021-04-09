@@ -38,11 +38,11 @@ Our orthogonal convolutional layer can be found in `layers.py`. The actual layer
 The script `train.py` can be used to run most of the experiments from our paper. To try the "flagship" experiment demonstrating better clean accuracy and <img src="https://render.githubusercontent.com/render/math?math=\ell_2">-norm-bounded deterministic certifiable robustness, run:
 
 ```
-python train.py --epochs=200 --conv=CayleyConv --linear=CayleyLinear --lr_max=0.001
+python train.py --epochs=200 --conv=CayleyConv --linear=CayleyLinear
 ```
 
 To compare with BCOP as in our paper, run:
 
 ```
-python train.py --epochs=200 --conv=BCOP --linear=BjorckLinear --lr_max=0.001
+python train.py --epochs=200 --conv=BCOP --linear=BjorckLinear
 ```
